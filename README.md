@@ -4,7 +4,7 @@ This is a minimal static site used to represent **Verified Wallet**, a browser w
 
 ### 🌐 Live URL
 
-Hosted at: [verified-wallet-site](https://mohzcrea8me.github.io/verified-wallet-metadata/)) 
+Hosted at: [verified-wallet-site](https://mohzcrea8me.github.io/verified-wallet-metadata/)
 
 ---
 
