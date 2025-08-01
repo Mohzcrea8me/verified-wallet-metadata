@@ -29,6 +29,6 @@ metadata: {
   name: "Verified Wallet Extension",
   description: "Browser extension for the Verified Wallet.",
   url: "https://mohzcrea8me.github.io/verified-wallet-metadata",
-  icons: ["https://raw.githubusercontent.com/mohzcrea8me/verified-wallet-metadata/main/logo.png"]
+  icons: ["https://raw.githubusercontent.com/mohzcrea8me/verified-wallet-metadata/main/icon128.png"]
 }
 
