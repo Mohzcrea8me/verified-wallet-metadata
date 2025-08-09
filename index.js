@@ -1,9 +1,9 @@
 const params = new URLSearchParams(window.location.search);
 const uri = params.get("uri");
 
-console.log("vw: ", window.verifiedwallet);
+console.log("window: ", window);
 
-if (uri?.startsWith("wc") && window.verifiedwallet?.request) {
+if (uri?.startsWith("wc")) {
   console.log("using uri: ", uri);
   window.verifiedwallet.request({
     method: "pair_walletconnect_uri",
