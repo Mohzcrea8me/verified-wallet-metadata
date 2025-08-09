@@ -3,8 +3,8 @@ const uri = params.get("uri");
 
 if (uri?.startsWith("wc") && window.verifiedwallet?.request) {
   console.log("using uri: ", uri);
-  //   window.verifiedwallet.request({
-  //     method: "pair_walletconnect_uri",
-  //     params: { uri },
-  //   });
+  window.verifiedwallet.request({
+    method: "pair_walletconnect_uri",
+    params: { uri },
+  });
 }
