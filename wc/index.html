@@ -2,21 +2,149 @@
 <html lang="en">
 
 <head>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const uri = params.get("uri");
-
-        if (uri) {
-            window.location.href = `/?uri=${encodeURIComponent(uri)}`
-        } else {
-            window.location.href = "/"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Vault is a secure Ethereum wallet browser extension compatible with WalletConnect." />
+    <title>Verified Wallet</title>
+    <link rel="icon" href="icon128.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
         }
 
-    </script>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 1.2rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 1rem 0 2rem;
+        }
+
+        .discord {
+            color: #ff7e5f;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .discord:hover,
+        .discord:focus {
+            border-bottom: 2px solid #ff7e5f;
+            outline: none;
+        }
+
+        a.button {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #ff7e5f;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        a.button:hover {
+            background-color: #eb674a;
+        }
+
+        .youtube-button {
+            background-color: #ff0000;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.25rem;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .youtube-button:hover {
+            background-color: #cc0000;
+        }
+
+        .youtube-button svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            fill: #fff;
+            vertical-align: middle;
+        }
+    </style>
 
 </head>
 
 <body>
+
+    <script src="./index.js">
+
+
+    </script>
+
+    <div class="container">
+        <img src="icon128.png" alt="Verified Wallet Icon" class="logo" />
+        <h1>Verified Wallet</h1>
+        <p>
+            Verified Wallet extension compatible with WalletConnect by Verified Network.
+            <br />
+            <a href="https://discord.gg/D6BrVQYw9s" target="_blank" rel="noopener noreferrer" class="discord">Verified
+                Network
+                Discord</a>
+        </p>
+
+        <a href="https://chromewebstore.google.com/detail/verified-wallet/abkgckcpmnbipkfhkkchkdfkmccjdmkh"
+            target="_blank" rel="noopener noreferrer" class="button">
+            Install Extension
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=Q6-rcfj4LQs" target="_blank" class="button youtube-button"
+            rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                    d="M549.7 124.1c-6.3-23.8-25-42.6-48.7-49.2C455.4 64 288 64 288 64s-167.4 0-213 10.9c-23.7 6.6-42.4 25.4-48.7 49.2C16 168.7 16 256 16 256s0 87.3 10.6 131.9c6.3 23.8 25 42.6 48.7 49.2 45.6 10.9 213 10.9 213 10.9s167.4 0 213-10.9c23.7-6.6 42.4-25.4 48.7-49.2C560 343.3 560 256 560 256s0-87.3-10.3-131.9zM232 336V176l142.7 80L232 336z" />
+            </svg>
+            Watch Videos
+        </a>
+    </div>
+
 
 </body>
 
